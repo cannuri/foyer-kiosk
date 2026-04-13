@@ -168,35 +168,7 @@
             text-transform: uppercase;
         }
 
-        /* ── TOGGLE ── */
-        #toggle {
-            position: fixed;
-            bottom: 36px;
-            right: 48px;
-            z-index: 200;
-            display: flex;
-            gap: 2px;
-        }
-
-        .toggle-btn {
-            background: rgba(255,255,255,0.04);
-            border: 1px solid rgba(255,255,255,0.1);
-            color: var(--muted);
-            font-family: var(--font-body);
-            font-size: 10px;
-            letter-spacing: 0.14em;
-            padding: 8px 20px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            text-transform: uppercase;
-        }
-
-        .toggle-btn.active,
-        .toggle-btn:hover {
-            background: rgba(230,57,70,0.12);
-            border-color: var(--red);
-            color: var(--cream);
-        }
+        /* Toggle buttons removed for kiosk mode */
 
         /* ══════════════════════════════
            SLIDER VIEW
@@ -740,11 +712,7 @@
     <!-- DOTS -->
     <div id="dots"></div>
 
-    <!-- TOGGLE -->
-    <div id="toggle">
-        <button class="toggle-btn active" id="btn-slider" onclick="setView('slider')">Slider</button>
-        <button class="toggle-btn" id="btn-grid" onclick="setView('grid')">Grid</button>
-    </div>
+    <!-- TOGGLE (hidden on kiosk) -->
 
 <script>
 // ══════════════════════════════
